@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/poc-tvbox/static/css/main.adf3586f.css",
+    "main.js": "/poc-tvbox/static/js/main.096257ab.js",
+    "static/js/453.3b004090.chunk.js": "/poc-tvbox/static/js/453.3b004090.chunk.js",
+    "index.html": "/poc-tvbox/index.html",
+    "main.adf3586f.css.map": "/poc-tvbox/static/css/main.adf3586f.css.map",
+    "main.096257ab.js.map": "/poc-tvbox/static/js/main.096257ab.js.map",
+    "453.3b004090.chunk.js.map": "/poc-tvbox/static/js/453.3b004090.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adf3586f.css",
+    "static/js/main.096257ab.js"
+  ]
+}
