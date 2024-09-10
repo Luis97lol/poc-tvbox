@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.focused {
+  border: 2px solid #00ff00;
+  background-color: rgba(0, 255, 0, 0.1);
+}
