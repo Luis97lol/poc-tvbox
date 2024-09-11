@@ -1,10 +1,24 @@
 import { useEffect, useState } from 'react';
+
 function App() {
+
   const [focusedIndex, setFocusedIndex] = useState(0); // Para rastrear qué elemento está enfocado
   const [texto, setTexto] = useState(); // Para rastrear qué elemento está enfocado
 
 
   useEffect(() => {
+
+    window.history.pushState(null, null, window.location.href);
+
+    const handlePopState = (event) => {
+      // Empuja nuevamente el estado al presionar el botón de retroceso
+      window.history.pushState(null, null, window.location.href);
+      alert("El botón de volver está deshabilitado en esta página.");
+    };
+
+    // Agrega el listener para el evento "popstate"
+    window.addEventListener("popstate", handlePopState);
+
     const handleKeyDown = (event) => {
       switch (event.key) {
         case 'ArrowUp':
@@ -38,7 +52,9 @@ function App() {
     window.addEventListener('keydown', handleKeyDown);
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener("popstate", handlePopState);
     };
+    
   }, [focusedIndex]);
 
   return (
